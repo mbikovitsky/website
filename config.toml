@@ -1,4 +1,31 @@
-baseURL = "http://example.org/"
+baseURL = "https://bikodbg.com/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Biko's House of Horrors"
+
+# Theme
 theme = "simple-hugo-theme"
+
+# Pagination
+paginate = 3
+paginatePath = "page"
+
+# Copyright
+copyright = "2019 — Michael Bikovitsky — CC BY-SA 4.0."
+
+# Menu
+[menu]
+  # Header
+  [[menu.main]]
+    url = "/posts/"
+    name = "blog"
+    weight = 1
+
+  # Footer
+  [[menu.footer]]
+    url = "https://github.com/mbikovitsky"
+    name = "GitHub"
+    weight = 1
+  [[menu.footer]]
+    url = "/posts/index.xml"
+    name = "RSS"
+    weight = 2
