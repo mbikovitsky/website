@@ -2,6 +2,8 @@ baseURL = "https://bikodbg.com/"
 languageCode = "en-us"
 title = "Biko's House of Horrors"
 
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
 # Theme
 theme = "simple-hugo-theme"
 
