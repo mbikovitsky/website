@@ -19,6 +19,10 @@ copyright = "2019 — Michael Bikovitsky — CC BY-SA 4.0."
     url = "/posts/"
     name = "blog"
     weight = 1
+  [[menu.main]]
+    url = "/about/"
+    name = "about"
+    weight = 2
 
   # Footer
   [[menu.footer]]
