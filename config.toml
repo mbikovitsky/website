@@ -18,7 +18,7 @@ copyright = "2019 — Michael Bikovitsky — CC BY-SA 4.0."
 [menu]
   # Header
   [[menu.main]]
-    url = "/posts/"
+    url = "/blog/"
     name = "blog"
     weight = 1
   [[menu.main]]
@@ -32,6 +32,6 @@ copyright = "2019 — Michael Bikovitsky — CC BY-SA 4.0."
     name = "GitHub"
     weight = 1
   [[menu.footer]]
-    url = "/posts/index.xml"
+    url = "/blog/index.xml"
     name = "RSS"
     weight = 2
