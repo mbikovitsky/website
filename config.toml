@@ -35,7 +35,3 @@ copyright = "2019 — Michael Bikovitsky — CC BY-SA 4.0."
     url = "https://github.com/mbikovitsky"
     name = "GitHub"
     weight = 1
-  [[menu.footer]]
-    url = "/blog/index.xml"
-    name = "RSS"
-    weight = 2
