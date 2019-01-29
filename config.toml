@@ -12,7 +12,7 @@ paginate = 10
 paginatePath = "page"
 
 # Copyright
-copyright = "2019 — Michael Bikovitsky — CC BY-SA 4.0."
+copyright = "© 2019 — Michael Bikovitsky — CC BY-SA 4.0."
 
 # Menu
 [menu]
