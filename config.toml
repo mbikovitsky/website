@@ -8,7 +8,7 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 theme = "simple-hugo-theme"
 
 # Pagination
-paginate = 3
+paginate = 10
 paginatePath = "page"
 
 # Copyright
