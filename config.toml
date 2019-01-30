@@ -39,3 +39,8 @@ copyright = "© 2019 — Michael Bikovitsky — CC BY-SA 4.0."
     url = "https://twitter.com/mbikovitsky"
     name = "Twitter"
     weight = 2
+
+# Links format
+[permalinks]
+  blog = "/blog/:year/:month/:filename/"
+  writing = "/writing/:year/:month/:filename/"
