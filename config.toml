@@ -50,3 +50,6 @@ pygmentsStyle = "vs"
 [permalinks]
   blog = "/blog/:year/:month/:filename/"
   writing = "/writing/:year/:month/:filename/"
+
+[markup.goldmark.renderer]
+unsafe = true
