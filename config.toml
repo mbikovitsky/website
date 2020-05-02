@@ -42,7 +42,7 @@ pygmentsStyle = "vs"
     name = "GitHub"
     weight = 1
   [[menu.footer]]
-    url = "https://twitter.com/mbikovitsky"
+    url = "https://twitter.com/bikodbg"
     name = "Twitter"
     weight = 2
 
