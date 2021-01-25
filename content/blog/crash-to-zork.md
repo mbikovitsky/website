@@ -11,7 +11,7 @@ For me, it sparked an idea: if a driver can read text from- and write text to-, 
 attached debugger, why not use it to play a little game?
 
 Specifically, let's play Zork:
-![Zork in the debugger](/zork.gif)
+![Zork in the debugger](/img/zork.gif)
 
 The idea is simple: if the system crashes (BSoDs) while the driver is loaded, and
 a kernel debugger happens to be attached, then before the system reboots the driver will

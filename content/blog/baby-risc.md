@@ -148,7 +148,7 @@ Lucky for us, there is already a payload generator provided with the challenge.
 
 We run the payload and get... garbage. Shouldn't this have worked?
 
-![First output from running the payload](/baby-risc-gibberish.png)
+![First output from running the payload](/img/baby-risc-gibberish.png)
 
 The problem is that this RISC architecture does not have a way to load an immediate
 value into a register. Instead, we have to resort to things like `ADDI R0, ZERO, 42`.
