@@ -18,7 +18,7 @@ They will be linked here as soon as they are published.
   - Python4
 - Reversing
   - ForceCoin
-  - NFC
+  - [NFC]({{< ref "/blog/nfc.md" >}})
 
 
 [Shabak]: https://en.wikipedia.org/wiki/Shin_Bet
