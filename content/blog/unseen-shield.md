@@ -13,7 +13,7 @@ They will be linked here as soon as they are published.
 
 - Pwn
   - [BabyRISC]({{< ref "/blog/baby-risc.md" >}})
-  - Recall
+  - [Recall]({{< ref "/blog/recall.md" >}})
   - Paging
   - Python4
 - Reversing
