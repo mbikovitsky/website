@@ -19,8 +19,9 @@ They will be linked here as soon as they are published.
   - Paging
   - Python4
 - Reversing
-  - ForceCoin
+  - [ForceCoin]({{< ref "/blog/force-coin.md" >}})
   - [NFC]({{< ref "/blog/nfc.md" >}})
+  - shabaKernel
 
 
 [Shabak]: https://en.wikipedia.org/wiki/Shin_Bet
