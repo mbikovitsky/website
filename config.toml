@@ -15,10 +15,10 @@ paginatePath = "page"
 copyright = "© 2021 — Michael Bikovitsky — CC BY-SA 4.0."
 
 # Highlighting
-pygmentsCodefences = true
-pygmentsCodeFencesGuessSyntax = true
-pygmentsoptions = "linenos=table"
-pygmentsStyle = "vs"
+[markup.highlight]
+guessSyntax = true
+lineNos = true
+style = "vs"
 
 # Menu
 [menu]
