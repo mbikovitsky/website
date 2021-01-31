@@ -3,6 +3,8 @@ title: "Shabak Challenge 2021: NFC"
 date: 2021-01-27
 ---
 
+**Update 2021-01-31**: Archive moved to the [Internet Archive][Challenge].
+
 This is part of my series of writeups on the Shabak 2021 CTF challenges.
 See the complete collection [here][TOC].
 
@@ -128,7 +130,7 @@ of bruteforcing the first 2 bytes.
 [TOC]: {{< ref "/blog/unseen-shield.md" >}}
     "Shabak Challenge 2021 table of contents"
 
-[Challenge]: https://github.com/mbikovitsky/shabak-challenge-2021/tree/main/Reversing/2%20-%20NFC
+[Challenge]: https://archive.org/download/shabak-challenge-2021/shabak-challenge-2021.zip/
     "NFC challenge files"
 
 [NTAG213]: https://www.nxp.com/docs/en/data-sheet/NTAG213_215_216.pdf

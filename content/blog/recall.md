@@ -3,6 +3,8 @@ title: "Shabak Challenge 2021: Recall"
 date: 2021-01-29
 ---
 
+**Update 2021-01-31**: Archive moved to the [Internet Archive][Challenge].
+
 This is part of my series of writeups on the Shabak 2021 CTF challenges.
 See the complete collection [here][TOC].
 
@@ -283,7 +285,7 @@ And that's it! Side channels FTW.
 [TOC]: {{< ref "/blog/unseen-shield.md" >}}
     "Shabak Challenge 2021 table of contents"
 
-[Challenge]: https://github.com/mbikovitsky/shabak-challenge-2021/tree/main/Pwn/2%20-%20Recall
+[Challenge]: https://archive.org/download/shabak-challenge-2021/shabak-challenge-2021.zip/
     "Recall challenge files"
 
 [Binary search]: https://en.wikipedia.org/w/index.php?title=Binary_search_algorithm&oldid=1002025819#Procedure_for_finding_the_leftmost_element

@@ -3,6 +3,8 @@ title: "Shabak Challenge 2021: BabyRISC"
 date: 2021-01-25T12:54:00+02:00
 ---
 
+**Update 2021-01-31**: Archive moved to the [Internet Archive][Challenge].
+
 This is part of my series of writeups on the Shabak 2021 CTF challenges.
 See the complete collection [here][TOC].
 
@@ -51,9 +53,9 @@ Speaking of registers, our fictional architecture has 9 of them, as defined in
 - `SP`
 
 Almost every arithmetic operation `OP` has two forms:
-- The "regular" form, `<OP> <R>, <R>, <R>`, i.e. an opcode followed by 
+- The "regular" form, `<OP> <R>, <R>, <R>`, i.e. an opcode followed by
   3 register specifications.
-- The "immediate" form, `<OPI> <R>, <R>, <IMM32>`, i.e. an opcode followed by 
+- The "immediate" form, `<OPI> <R>, <R>, <IMM32>`, i.e. an opcode followed by
   2 register specifications, followed by an immediate value (32-bit).
 
 For instance, `ADD R0, R1, R1` will calculate `R1 + R1` and store the result in `R0`.
@@ -166,5 +168,5 @@ added `-41`), then stick everything back together.
 [TOC]: {{< ref "/blog/unseen-shield.md" >}}
     "Shabak Challenge 2021 table of contents"
 
-[Challenge]: https://github.com/mbikovitsky/shabak-challenge-2021/tree/main/Pwn/1%20-%20BabyRISC
+[Challenge]: https://archive.org/download/shabak-challenge-2021/shabak-challenge-2021.zip/
     "BabyRISC challenge files"

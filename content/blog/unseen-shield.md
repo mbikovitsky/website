@@ -3,10 +3,12 @@ title: "Shabak Challenge 2021"
 date: 2021-01-25T12:53:00+02:00
 ---
 
+**Update 2021-01-31**: Archive moved to the [Internet Archive][Archive].
+
 In January of 2021, the [Shabak][Shabak] (the Israel Security Agency) published a set
 of CTF challenges at [shabakchallenge.com](https://shabakchallenge.com/).
 The original website may be gone now, but I downloaded what I could and uploaded it to
-[GitHub][Archive].
+the [Internet Archive][Archive].
 
 For your amusement, I also present writeups on some of the challenges I solved.
 They will be linked here as soon as they are published.
@@ -24,5 +26,5 @@ They will be linked here as soon as they are published.
 [Shabak]: https://en.wikipedia.org/wiki/Shin_Bet
     "Shin Bet - Wikipedia"
 
-[Archive]: https://github.com/mbikovitsky/shabak-challenge-2021
+[Archive]: https://archive.org/details/shabak-challenge-2021
     "Archive of the Shabak 2021 CTF challenges"
