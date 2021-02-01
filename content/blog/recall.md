@@ -1,6 +1,7 @@
 ---
 title: "Shabak Challenge 2021: Recall"
 date: 2021-01-29
+summary: Reading without reading
 ---
 
 **Update 2021-01-31**: Archive moved to the [Internet Archive][Challenge].

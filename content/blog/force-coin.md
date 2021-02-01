@@ -1,6 +1,7 @@
 ---
 title: "Shabak Challenge 2021: ForceCoin"
 date: 2021-01-31
+summary: Blockchain is not always the answer
 ---
 
 This is part of my series of writeups on the Shabak 2021 CTF challenges.

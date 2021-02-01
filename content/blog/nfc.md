@@ -1,6 +1,7 @@
 ---
 title: "Shabak Challenge 2021: NFC"
 date: 2021-01-27
+summary: RTFM
 ---
 
 **Update 2021-01-31**: Archive moved to the [Internet Archive][Challenge].

@@ -1,6 +1,7 @@
 ---
 title: "Shabak Challenge 2021: BabyRISC"
 date: 2021-01-25T12:54:00+02:00
+summary: Correct for specific values of zero
 ---
 
 **Update 2021-01-31**: Archive moved to the [Internet Archive][Challenge].

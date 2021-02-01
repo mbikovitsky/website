@@ -1,6 +1,7 @@
 ---
 title: "Shabak Challenge 2021"
 date: 2021-01-25T12:53:00+02:00
+summary: Writeups on the Shabak 2021 CTF
 ---
 
 **Update 2021-01-31**: Archive moved to the [Internet Archive][Archive].
