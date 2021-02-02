@@ -16,7 +16,7 @@ See the complete collection [here][TOC].
 - [Assemble it yourself](#assemble-it-yourself)
 - [Some more "features"](#some-more-features)
 
-# Introduction
+## Introduction
 
 The [challenge][Challenge] description reads:
 
@@ -32,7 +32,7 @@ the introduction over at [Azeria Labs][ARM-intro].
 
 With the introductions done, let's get going.
 
-# A high-level overview
+## A high-level overview
 
 Looking at the supplied code, there are a lot of moving parts.
 Before we can get the flag, we'll have to understand how the system works.
@@ -52,7 +52,7 @@ instruction:
 4. Authentication.
 5. Terminating the emulator.
 
-## Paging
+### Paging
 
 Looking inside `paging.py`, we can see that we have a two-level paging structure.
 The physical address of the Page Directory is stored in `TTBR0`, the PD contains
@@ -101,7 +101,7 @@ The `Dirty` bit is set whenever an entry is accessed during translation,
 The `NX` bit indicates whether the target page is Not eXecutable. For a page
 to be executable, all the entries leading up to it must have the `NX` bit set to `0`.
 
-## Hypercalls
+### Hypercalls
 
 The hypercall mechanism provides a lot of functionality, and we'll get back to that
 later on. For now, we can note the following:
@@ -136,7 +136,7 @@ struct hypercall_config
 };
 ```
 
-# Yes, and...
+## Yes, and...
 
 We now understand, in broad strokes, how the system works. However, we are no closer
 to understanding how we should go about retrieving the flag. The emulator does
@@ -203,7 +203,7 @@ And so we have our plan:
 
 Except... authentication doesn't work.
 
-# A bit too far
+## A bit too far
 
 The way authentication is *meant* to work (according to the code comments), is by
 setting `self._curr_perm` to `Hypercall.GROUP_PERM_SUPER` (by default the value is
@@ -287,7 +287,7 @@ Note that the page we're accessing need not actually exist in physical memory.
 In this case, the paging mechanism will throw an exception, which will be suppressed
 inside `hook_read` in `main.py`.
 
-# Assemble it yourself
+## Assemble it yourself
 
 Our plan now looks like this:
 
@@ -306,14 +306,13 @@ Note that the emulator disallows the use of `.` directives in the assembly code,
 so we can't use `.ascii` to bring the command with us. Handling this is left
 as an exercise for the reader 😎.
 
-# Some more "features"
+## Some more "features"
 
 While looking into the paging implementation, I noticed it is possible to extend
 the amount of physical memory by 4 bytes at a time. In fact, one of my early solution
 attempts made use of this. See if you can find this "feature" 👾.
 
 `FIN`
-
 
 [^1]: This appears to be the last edition of the book that targets the x86 architecture.
       Beginning with the [class of 2019][xv6-port], xv6 was ported to RISC-V.
@@ -326,7 +325,6 @@ attempts made use of this. See if you can find this "feature" 👾.
 
 [^4]: All the ASCII diagrams in this post were made using
       [ASCIIFlow Infinity][asciiflow].
-
 
 [TOC]: {{< ref "/blog/unseen-shield.md" >}}
     "Shabak Challenge 2021 table of contents"
