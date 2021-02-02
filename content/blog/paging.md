@@ -62,7 +62,7 @@ Pages are 4kB in size.
 Looking at the `v_to_p` function, and the functions it calls, we can construct a picture
 of how a virtual address is broken down[^4]:
 
-```plain{linenos=false}
+```plain {linenos=false}
 +----------+----------+------------+
 |          |          |            |
 |   PDE    |   PTE    |   Offset   |
@@ -77,7 +77,7 @@ are an index into the Page Table, and the final 12 bits are an offset into the p
 What do the entries in a Page Directory/Table look like? The structure is defined
 in `entry.py`[^2]:
 
-```plain{linenos=false}
+```plain {linenos=false}
 +---------------------+--------+--+-----+--------+-----+-------+
 |                     |        |  |     |        |     |       |
 |         PFN         |Reserved|NX|Dirty|Accessed|Write|Present|
@@ -265,7 +265,7 @@ Conveniently for us, the paging structures are little-endian. If we treat
 the first physical page as a page table, then the first entry in it will look like
 this:
 
-```plain{linenos=false}
+```plain {linenos=false}
 +---------------------+----------------------------------------+
 |                     |                                        |
 |time_activated[0...2]|                groups                  |
@@ -314,6 +314,7 @@ attempts made use of this. See if you can find this "feature" 👾.
 
 `FIN`
 
+
 [^1]: This appears to be the last edition of the book that targets the x86 architecture.
       Beginning with the [class of 2019][xv6-port], xv6 was ported to RISC-V.
 
@@ -325,6 +326,7 @@ attempts made use of this. See if you can find this "feature" 👾.
 
 [^4]: All the ASCII diagrams in this post were made using
       [ASCIIFlow Infinity][asciiflow].
+
 
 [TOC]: {{< ref "/blog/unseen-shield.md" >}}
     "Shabak Challenge 2021 table of contents"

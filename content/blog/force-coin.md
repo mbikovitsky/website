@@ -113,7 +113,7 @@ we observe:
 Inspecting the newly-decrypted `db.txt` file, we can see it has several records similar
 to:
 
-```
+```plain
 0
 4
 Bob -> Eve [c1d9f50f86825a1a2302ec2449c17196, c1a5298f939e87e8f962a5edfc206918]
@@ -133,7 +133,7 @@ We can also add new records to the DB, by filling out the "Sender", "Recipient",
    `Sender -> Recipient [hex, hex, ...]`
 4. The number of hex strings in each transaction appears to be equal to the length
    of the "What" field.
-6. The hex strings look like MD5 hashes, but we can't be sure about that yet.
+5. The hex strings look like MD5 hashes, but we can't be sure about that yet.
 
 We can't load the previous transactions from the DB, so presumably we'll have
 to do some more bruteforcing. In order to do that, we need to understand how
@@ -144,14 +144,14 @@ written in C++, which promises many "fun" hours of reversing. Is there an easier
 What happens if we place just a single letter in the "What" field? Inputting `"a"`
 (the letter 'a') into the field and signing the block yields:
 
-```
+```plain
 Alice -> Bob [0cc175b9c0f1b6a831c399e269772661]
 ```
 
 And a quick check reveals that the hex string is the MD5 hash of `"a"`. What about
 `"aa"`?
 
-```
+```plain
 Alice -> Bob [0cc175b9c0f1b6a831c399e269772661, 4124bc0a9335c27f086f24ba207a4912]
 ```
 
@@ -164,13 +164,13 @@ perhaps this is the hash of `"aa"`? Another quick check reveals that this is so.
 
 This can be checked with, for example, the string `"abc"`:
 
-```
+```plain
 Alice -> Bob [0cc175b9c0f1b6a831c399e269772661, 187ef4436122d1cc2f40dc2b92f0eba0, 900150983cd24fb0d6963f7d28e17f72]
 ```
 
 And, indeed:
 
-```
+```plain
 MD5("a")   == 0cc175b9c0f1b6a831c399e269772661
 MD5("ab")  == 187ef4436122d1cc2f40dc2b92f0eba0
 MD5("abc") == 900150983cd24fb0d6963f7d28e17f72

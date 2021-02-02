@@ -16,7 +16,6 @@ copyright = "© 2021 — Michael Bikovitsky — CC BY-SA 4.0."
 
 # Highlighting
 [markup.highlight]
-guessSyntax = true
 lineNos = true
 style = "vs"
 

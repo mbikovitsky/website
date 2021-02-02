@@ -34,6 +34,7 @@ the implementation is riddled with macros :)
 
 We have the usual arithmetic operations (addition, multiplication, bit twiddling, etc.),
 as well as some more interesting things:
+
 - Output operations:
   - `PRINTC` to print the lower byte of a register as a character.
   - `PRINTDD` and `PRINTDX` to print the value of a register in decimal or hexadecimal
@@ -49,11 +50,13 @@ as well as some more interesting things:
 
 Speaking of registers, our fictional architecture has 9 of them, as defined in
 `asm_processor_state.{c,h}`:
+
 - `ZERO`
 - `R0`-`R6`
 - `SP`
 
 Almost every arithmetic operation `OP` has two forms:
+
 - The "regular" form, `<OP> <R>, <R>, <R>`, i.e. an opcode followed by
   3 register specifications.
 - The "immediate" form, `<OPI> <R>, <R>, <IMM32>`, i.e. an opcode followed by
@@ -97,7 +100,7 @@ This should be a walk in the park!
 The key here is to note _how_ the admin code checks the condition. Essentially,
 the code boils down to this:
 
-```
+```plain
 ADDI R1, ZERO, 42
 MUL R2, R0, R1
 SUBI R2, R2, 1
@@ -107,7 +110,7 @@ RETNZ R2
 
 Which is equivalent to:
 
-```
+```plain
 R1 = ZERO + 42
 R2 = R0 * R1
 R2 = R2 - 1
@@ -140,6 +143,7 @@ Except they do.
 ## How babies are made
 
 Now it's only a matter of generating the payload, which will do the following:
+
 1. Set `R0` to `1`.
 2. Push a fake register context onto the stack, such that the `ZERO` register in the
    context is set to `-41`.
