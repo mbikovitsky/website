@@ -17,7 +17,7 @@ They will be linked here as soon as they are published.
 - Pwn
   - [BabyRISC]({{< ref "/blog/baby-risc.md" >}})
   - [Recall]({{< ref "/blog/recall.md" >}})
-  - Paging
+  - [Paging]({{< ref "/blog/paging.md" >}})
   - Python4
 - Reversing
   - [ForceCoin]({{< ref "/blog/force-coin.md" >}})
