@@ -22,7 +22,7 @@ They will be linked here as soon as they are published.
 - Reversing
   - [ForceCoin]({{< ref "/blog/force-coin.md" >}})
   - [NFC]({{< ref "/blog/nfc.md" >}})
-  - shabaKernel
+  - [shabaKernel]({{< ref "/blog/shaba-kernel.md" >}})
 
 
 [Shabak]: https://en.wikipedia.org/wiki/Shin_Bet

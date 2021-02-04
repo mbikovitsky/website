@@ -1,0 +1,12 @@
+{
+  "line-length": {
+    "line_length": 88
+  },
+  "no-inline-html": {
+    "allowed_elements": ["a"]
+  },
+  "no-trailing-punctuation": false,
+  "no-multiple-blanks": {
+    "maximum": 2
+  }
+}

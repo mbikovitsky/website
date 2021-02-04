@@ -54,7 +54,7 @@ some syscalls (`inject_initial_syscalls`) into the child. Specifically:
 _Note_: it's quite easy to get lost in all the framework code in the sandbox, i.e.
 all the code that moves stuff around, massages memory to inject syscalls, etc. I know
 I was tempted to dive into all this while I was solving the challenge. However,
-our first priority here is to get our bearings - undersrand at a high level what
+our first priority here is to get our bearings - understand at a high level what
 the code does. We can always come back later if we think something warrants further
 investigation.
 
