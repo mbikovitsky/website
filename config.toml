@@ -19,6 +19,9 @@ copyright = "© 2021 — Michael Bikovitsky — CC BY 4.0"
 lineNos = true
 style = "monokai"
 
+# Math
+math = false
+
 # Menu
 [menu]
   # Header

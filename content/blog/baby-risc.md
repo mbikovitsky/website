@@ -82,7 +82,7 @@ The flag itself is stored in a file called `flag` in the current directory. Howe
 the instructions provided by the simulator do not provide for reading files. Indeed,
 they do not seem to be fit for any nefarious purpose! The print instructions do not use
 any unsafe format strings, and all stack accesses are validated so as not to overflow.
-Here goes out hope for RCE.
+Here goes our hope for RCE.
 
 But do we actually have to execute arbitrary code? Perhaps it's time we took a look
 at what the simulator actually does.
